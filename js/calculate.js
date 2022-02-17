@@ -17,7 +17,14 @@ function getElement(id) {
 
     }
 
+
+
+    // clear value
+    allCostingInput.value = '';
+
     return allCostingInput;
+
+
 
 
 
