@@ -21,40 +21,44 @@
     </header>
     <!-- -------main part------ -->
     <main class="container">
-        <section class="row my-4">
-            <div class="d-flex">
-                <div class="col-12 col-md-6">
-                    <img class="img-fluid img-soluation" src="pic/image.png" alt="">
+        <section class=" my-4">
+            <div class="d-flex row">
+                <div class="col-md-6">
+                    <img class="img-fluid img-soluation w-100" src="pic/image.png" alt="">
                 </div>
-                <div class="calculation-part col-12 col-md-6">
+                <div class="calculation-part col-md-6">
                     <div class="p-5">
                         <div>
                             <h5 class="text-center fw-bold ">Income</h5>
-                            <h5 class="d-flex">Income: <input class="form-control mx-3" type="text"></h5>
+                            <h5 class="d-flex">Income: <input id="total-income" class="form-control mx-3" type="text">
+                            </h5>
                             <h5 class="text-center fw-bold">Expenses</h5>
-                            <h5 class="d-flex ps-4">Food: <input class="form-control mx-3" type="text"></h5>
-                            <h5 class="d-flex ps-4">Rent: <input class="form-control mx-3" type="text"></h5>
-                            <h5 class="d-flex">Clothes: <input class="form-control mx-3 mb-2" type="text"></h5>
+                            <h5 class="d-flex ps-4">Food: <input id="food-cost" class="form-control mx-3" type="text">
+                            </h5>
+                            <h5 class="d-flex ps-4">Rent: <input id="rent-cost" class="form-control mx-3" type="text">
+                            </h5>
+                            <h5 class="d-flex">Clothes: <input id="cloth-cost" class="form-control mx-3 mb-2"
+                                    type="text"></h5>
 
-                            <button class="btn btn-dark fw-bold px-5 ms-5 mb-2">Calculate</button>
+                            <button id="calculate-btn" class="btn btn-dark fw-bold px-5 ms-5 mb-2">Calculate</button>
 
                         </div>
 
                         <div>
-                            <h5 class="text-center fw-bold ">Total Expenses: <span>00</span> </h5>
-                            <h5 class="text-center fw-bold ">Balance: <span>00</span></h5>
+                            <h5 class="text-center fw-bold ">Total Expenses: $<span id="total-outlay">00</span> </h5>
+                            <h5 class="text-center fw-bold ">Balance: $<span id="new-balance">00</span></h5>
                         </div>
                         <!-- -----saving section---- -->
                         <div>
-                            <h5 class="d-flex">Save: <input class="form-control mx-3" type=" "> %
-                                <button class="btn btn-dark ms-2 px-3">Save</button>
+                            <h5 class="d-flex">Save: <input id="save-info" class="form-control mx-3" type=" "> %
+                                <button id="save-btn" class="btn btn-dark ms-2 px-3">Save</button>
                             </h5>
 
                         </div>
                         <div>
-                            <h5 class="text-center fw-bold ">Saving Amount: <span>00</span></h5>
+                            <h5 class="text-center fw-bold ">Saving Amount: <span id="recently-save">00</span></h5>
                             <h5 class="text-center fw-bold ">
-                                Remaining Balance: <span>00</span>
+                                Remaining Balance: <span id="remaining-balnace">00</span>
                             </h5>
                         </div>
 
