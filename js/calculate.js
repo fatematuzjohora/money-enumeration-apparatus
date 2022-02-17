@@ -1,6 +1,6 @@
 function getElement(id) {
     const allCostingInput = document.getElementById(id).value;
-    return allCostingInput;
+
 
     // error handle
 
@@ -11,12 +11,15 @@ function getElement(id) {
         return alert('please give positive value')
 
     }
-    else {
-        isNAN(allCostingInput)
-        return alert('please give floating number')
+    else if (isNaN(allCostingInput)) {
+
+        return alert('please give float number')
 
     }
-    // clear input
+
+    return allCostingInput;
+
+
 
 
 }
